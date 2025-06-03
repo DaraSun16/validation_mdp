@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validation de mot de passe</title>
+  <meta name="description" content="Renforcez votre mot de passe">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  
+  <div class="box">
+    <div class="inputBx">
+      <input type="password" id="pswrd" placeholder="Votre mot de passe">
+      <span id="toggleBtn"></span>
+    </div>
+
+   <div class="validation">
+    <ul>
+      <li id="lower">Au moins une minuscule</li>
+      <li id="upper">Au moins une majuscule</li>
+      <li id="number">Au moins un chiffre</li>
+      <li id="special">Au moins un caractère spécial</li>
+      <li id="length">Au moins 8 caractères</li>
+    </ul>
+   </div>
+
+   <div class="sanction">
+    <input id="ok" value="Enr" disabled="disabled">
+   </div>
+  </div>
+
+  <script src="js/js.js"></script>
+</body>
+</html>
