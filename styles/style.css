@@ -53,3 +53,7 @@ body {
   content: '\f06e';
   font-family: fontAwesome;
 }
+
+.box .inputBx #toggleBtn.hide::before {
+  content: '\f070';
+}
