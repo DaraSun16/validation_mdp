@@ -57,3 +57,58 @@ body {
 .box .inputBx #toggleBtn.hide::before {
   content: '\f070';
 }
+
+.box .validation{
+  background-color: #376488;
+  padding: 10px;
+  margin: 30px 0;
+  border-radius: 8px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .15);
+}
+
+.box .validation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.box .validation li{
+  list-style-type: none;
+  color: white;
+  font-size: 0.85em;
+  transition: 0.5s;
+}
+
+.box .validation li::before {
+  content: '\f192';
+  font-family: fontAwesome;
+  width: 20px;
+  height: 10px;
+  display: inline-flex;
+}
+
+.box .validation li.valid {
+  color: rgba(255, 255, 255, .5)
+}
+
+.box .validation li.valid::before {
+  content: '\f00c';
+  color: #00ff00;
+}
+
+.box .sanction input {
+  width: 100%;
+  background-color: #376488;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .15);
+  text-align: center;
+}
+
+.box .sanction input:disabled {
+  background-color: #607484;
+  color: #aeb0b1;
+}
